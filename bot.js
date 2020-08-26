@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 const prefix = "ul!"
 const game = "Created by OldBear"
-const token = "NzQ2Nzk5MjgwNjEzODgzOTA0.X0FlBw.lziybvgcelh2J_s7r5FF7LNpqcQ"
+const token = process.env.token
 client.once('ready', function(){
 	console.log("Bot opened")
 	client.user.setActivity(game);
